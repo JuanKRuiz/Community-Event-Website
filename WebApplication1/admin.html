@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noches de Innovación</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .hero-unit img {
+            margin-left: 0;
+            margin-right: 60px;
+        }
+    </style>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="index.html">Noches de Innovación</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/live.html">Transmisión</a></li>
+                        <li class="active"><a href="/admin.html">Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a> <span class="divider">/</span></li>
+            <li class="active">Administración</li>
+        </ul>
+
+        <div class="hero-unit">
+            <img src="img/ndi-logo.png" class="span2" />
+            <h1>Página de administración</h1>
+            <p></p>
+            <p>Para las transmisiones en vivo</p>
+        </div>
+
+        <form class="form-horizontal">
+            <fieldset>
+                <legend>Actualización de videos</legend>
+                <div class="control-group">
+                    <label class="control-label" for="input-video-id">Video Id</label>
+                    <div class="controls">
+                        <input type="text" id="input-video-id" placeholder="hangout video id">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <label class="control-label" for="input-password">Password</label>
+                    <div class="controls">
+                        <input type="password" id="input-password" placeholder="secret password">
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <button id="btn-send" type="button" class="btn btn-primary" disabled="disabled">Connecting with server...</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="container">
+        <hr />
+        <footer style="height:60px;"><a href="http://twitter.com/JuanKRuiz" target="_blank"> @JuanKRuiz</a> 2013</footer>
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+        // Fallback to loading jQuery from a local path if the CDN is unavailable
+        (window.jQuery || document.write('<script src="/Scripts/jquery-2.0.3.min.js"><\/script>'));
+    </script>
+    <script src="/Scripts/jquery.signalR-2.0.0-rc1.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="js/signalr-send-vid-update.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

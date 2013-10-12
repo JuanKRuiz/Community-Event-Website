@@ -1,0 +1,32 @@
+﻿{
+"week":"Semana del 22 al 24 de Octubre",
+"dates":[
+    {
+        "day": "22",
+		"color":"background-color:#72CC23;",
+        "conferences": [
+                { "hour": "8 - 9", "what": "Consumir Servicios Web Api desde WinPhone / Windows 8", "who": "Roberto Alvarado", "audience": "IT Pro" },
+                { "hour": "9 - 10", "what": "Desarrollando para Windows phone y Windows 8 con el mismo código", "who": "Amin Espinoza", "audience": "Database" },
+                { "hour": "10 - 11", "what": "Conociendo el motor relacional", "who": "John Alexander Bulla", "audience": "Developer" }
+        ]
+    },
+    {
+        "day": "23",
+		"color":"background-color:#88B262;",
+        "conferences": [
+                { "hour": "8 - 9", "what": "StartUp Ignite: Cómo crear una tienda virtual en la nube", "who": "Dave Rndn", "audience": "Database" },
+                { "hour": "9 - 10", "what": "Como compartir Codigo entre App Windows 8 y Windows Phone 8", "who": "Roberto Alvarado", "audience": "Developer" },
+                { "hour": "10 - 11", "what": "BI y Data WareHouse, conociendo orígenes", "who": "Jose Gregorio Redondo", "audience": "IT Pro" }
+        ]
+    },
+    {
+        "day": "24",
+		"color":"background-color:#3C51B2;",
+        "conferences": [
+                { "hour": "8 - 9", "what": "Que es virtualizacion?", "who": "Mario posadas", "audience": "IT Pro" },
+                { "hour": "9 - 10", "what": "TSQL - Mejores practicas para escribir buen código", "who": "Jesus Gil Velasco", "audience": "Developer" },
+                { "hour": "10 - 11", "what": "Virtualizacion en Windows Server 2012 y SCVMM", "who": "Andres Galvan", "audience": "Database" }
+        ]
+    }
+]
+}

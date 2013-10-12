@@ -1,0 +1,32 @@
+﻿{
+"week":"Semana del 5 al 7 de Noviembre",
+"dates":[
+			{
+				"day": "5",
+				"color":"background-color:#3C51B2;",
+				"conferences": [
+						{ "hour": "8 - 9", "what": "Creando Videojuegos con Construct2", "who": "Juan Carlos Ruiz", "audience": "Developer" },
+						{ "hour": "9 - 10", "what": "StartUp Ignite: Tu negocio en la nube", "who": "Dave Rndn", "audience": "IT Pro" },
+						{ "hour": "10 - 11", "what": "Tecnologías de Colaboración Empresarial", "who": "David Sánchez Aguilar", "audience": "IT Pro" }
+				]
+			},
+			{
+				"day": "6",
+				"color":"background-color:#FF865F;",
+				"conferences": [
+						{ "hour": "8 - 9", "what": "Azure Mobile Services - Crea el backend de tus apps iOS, Android y Windows", "who": "Juan Carlos Ruiz", "audience": "Developer" },
+						{ "hour": "9 - 10", "what": "Conociendo el Computo en la Nube", "who": "Mario Posadas", "audience": "Developer" },
+						{ "hour": "10 - 11", "what": "Office 365 ¿Que es y que puede hacer por ti? ", "who": "Emmanuel David Rodríguez Hernandez", "audience": "IT Pro" }
+				]
+			},
+			{
+				"day": "7",
+				"color":"background-color:#C3CDFF;",
+				"conferences": [
+						{ "hour": "8 - 9", "what": "Creacion de App para windows Phone (Nivel 100)", "who": "Roberto Alvarado", "audience": "Developer" },
+						{ "hour": "9 - 10", "what": "Tecnologías de Colaboración para Desarrolladores", "who": "David Sánchez Aguilar", "audience": "IT Pro" },
+						{ "hour": "10 - 11", "what": "Conocimientos basicos sobre licenciamiento (PyMES)", "who": "Emmanuel David Rodríguez Hernández", "audience": "IT Pro" }
+				]
+			}
+		]
+}

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noches de Innovación</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .hero-unit img {
+            margin-left: 0;
+            margin-right: 60px;
+        }
+    </style>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="index.html">Noches de Innovación</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="/index.html">Home</a></li>
+                        <li class="active"><a href="#">Transmisión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a> <span class="divider">/</span></li>
+            <li class="active">Transmisión</li>
+        </ul>
+
+        <div class="hero-unit">
+            <img src="/img/ndi-logo.png" class="span2" />
+            <h1>Transmisión en vivo!</h1>
+            <p></p>
+            <p>Disfruta de los mejores contenidos</p>
+        </div>
+
+        <div id="video-container" style="text-align:center; margin:20px;">
+            <iframe id="youtube" width="1280" height="720" src="http://www.youtube.com/embed/5NTEHdKpfSY?autoplay=1"
+                    frameborder="0" allowfullscreen></iframe>
+        </div>
+
+    </div>
+    <div class="container">
+        <hr />
+        <footer style="height:60px;"><a href="http://twitter.com/JuanKRuiz" target="_blank"> @JuanKRuiz</a> 2013</footer>
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.0.3.min.js"></script>
+    <script>
+        // Fallback to loading jQuery from a local path if the CDN is unavailable
+        (window.jQuery || document.write('<script src="/Scripts/jquery-2.0.3.min.js"><\/script>'));
+    </script>
+    <script src="/js/jquery.fitvids.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Target your .container, .wrapper, .post, etc.
+            $("#video-container").fitVids();
+        });
+    </script>
+    <script src="/Scripts/jquery.signalR-2.0.0-rc1.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script type="text/javascript">
+        $(function () {
+            var youtubeHangoutHubProxy = $.connection.youtubeHangoutHub;
+            $.connection.hub.logging = true;
+
+            youtubeHangoutHubProxy.client.updateHangOut = function (videoid) {
+                $("#youtube").attr('src', 'http://www.youtube.com/embed/' + videoid + '?autoplay=1');
+            };
+
+            $.connection.hub.start();
+            
+            $.connection.hub.disconnected(function () {
+                setTimeout(function () {
+                    $.connection.hub.start();
+                }, 5000);
+            });
+
+        }
+        );
+    </script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html ng-app="apps-module">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noches de Innovación</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+
+    <style type="text/css">
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+    </style>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/angular.min.js"></script>
+    <script src="/controllers/generic-controller.js"></script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap-responsive.css" rel="stylesheet" />
+    <style type="text/css">
+        .container-fluid {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .row-fluid {
+            margin-bottom: 20px;
+        }
+
+        .span2 {
+            margin-right: 20px;
+            margin-left: 40px;
+        }
+
+        .hero-unit img {
+            margin-left: 0;
+            margin-right: 60px;
+            max-width: 170px;
+            max-height: 170px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="index.html">Noches de Innovación</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="/live.html">Transmisión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" ng-controller="GenericController">
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a> <span class="divider">/</span></li>
+            <li class="active">{{week.week}}</li>
+        </ul>
+        <div class="hero-unit">
+            <img src="/img/noches%20de%20.png" class="span2" />
+
+            <div class="container-fluid">
+                <h1>{{week.week}}</h1>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid" ng-repeat="dt in week.dates">
+                <img src="/img/{{dt.day}}.png" class="span2"
+                     style='{{dt.color}}' />
+                <table class="span3 thumbnail" ng-repeat="conf in dt.conferences">
+                    <tr style="height: 125px; vertical-align: top;">
+                        <td>
+                            <small>Hora: {{conf.hour}} <br />Audiencia: {{conf.audience}}</small>
+                            <h4>{{conf.what}}</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>
+                                {{conf.who}}
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <hr />
+        <footer style="height:60px;"><a href="http://twitter.com/JuanKRuiz" target="_blank"> @JuanKRuiz</a> 2013</footer>
+    </div>
+
+    <script>
+        angular.module('apps-module', [], function ($compileProvider) {
+            $compileProvider.urlSanitizationWhitelist(/^\s*(https?|ms-windows-store):/);
+        });
+    </script>
+</body>
+
+</html>
