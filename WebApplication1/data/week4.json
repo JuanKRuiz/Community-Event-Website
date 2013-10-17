@@ -1,0 +1,14 @@
+﻿{
+"week":"Semana del 12 de Noviembre",
+"dates":[
+			{
+				"day": "12",
+				"color":"background-color:#FF865F;",
+				"conferences": [
+						{ "hour": "8 - 9", "what": "Power Shell para Desarrolladores", "who": "Miguel Angel Carreon", "audience": "Developer" },
+						{ "hour": "9 - 10", "what": "Programación paralela con TPL", "who": "José Saturnino Pimentel", "audience": "Developer" },
+						{ "hour": "10 - 11", "what": "Introducción a Web API", "who": "Samuel Arellano", "audience": "Developer" }
+				]
+			}
+		]
+}

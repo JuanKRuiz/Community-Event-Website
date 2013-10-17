@@ -92,6 +92,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\12.png" />
     <Content Include="js\jquery.fitvids.js" />
     <Content Include="js\signalr-send-vid-update.js" />
     <Content Include="live.html" />
@@ -99,6 +100,7 @@
     <Content Include="data\week3.json" />
     <Content Include="data\week2.json" />
     <Content Include="data\week1.json" />
+    <Content Include="data\week4.json" />
     <None Include="Properties\PublishProfiles\nochesdeinovacion - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\nochesdeinovacion - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
