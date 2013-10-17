@@ -5,7 +5,7 @@
         "day": "29",
 		"color":"background-color:#88B262;",
         "conferences": [
-                { "hour": "8 - 9", "what": "JustTrace: Analizando el performance de tu aplicación", "who": "Julio Avellaneda", "audience": "Database" },
+                { "hour": "8 - 9", "what": "JustTrace: Analizando el performance de tu aplicación", "who": "Julio Avellaneda", "audience": "Developer" },
                 { "hour": "9 - 10", "what": "MDX, DAX, Cubos y Modelo Tabular", "who": "Freddy Angarita/Eduardo Castro", "audience": "Developer" },
                 { "hour": "10 - 11", "what": "Introducción a Microsoft Deployment toolkit 2012", "who": "Octavio Rodriguez", "audience": "IT Pro" }
         ]
@@ -15,7 +15,7 @@
 		"color":"background-color:#C3CDFF;",
         "conferences": [
                 { "hour": "8 - 9", "what": "DBA en la nube, SQL Azure, aprendiendo desde las alturas", "who": "Eduardo Castro", "audience": "Developer" },
-                { "hour": "9 - 10", "what": "Patterns & Practices : Como hacer una Persistencia Generica", "who": "Jonathan Romero", "audience": "IT Pro" },
+                { "hour": "9 - 10", "what": "Patterns & Practices : Como hacer una Persistencia Generica", "who": "Jonathan Romero", "audience": "Developer" },
                 { "hour": "10 - 11", "what": "Clonando Microsoft Windows con Clonezilla Usando Multicast", "who": "Octavio Rodriguez", "audience": "Database" }
         ]
     },
@@ -24,7 +24,7 @@
 		"color":"background-color:#FF865F;",
         "conferences": [
                 { "hour": "8 - 9", "what": " Pregúntele a los expertos (Tips & Tricks)", "who": "John Bulla, Jose Redondo, Freddy Angarita, Eduardo Castro, Jesus Gil", "audience": "IT Pro" },
-                { "hour": "9 - 10", "what": "Crear aplicaciones con Azure Media Services", "who": "Jonathan Romero", "audience": "Database" },
+                { "hour": "9 - 10", "what": "Crear aplicaciones con Azure Media Services", "who": "Jonathan Romero", "audience": "Developer" },
                 { "hour": "10 - 11", "what": "Monitoreando la infraestructura con SCOM", "who": "Andres Galvan", "audience": "Developer" }
         ]
     }
