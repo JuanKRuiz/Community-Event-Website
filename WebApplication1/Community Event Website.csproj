@@ -92,6 +92,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="registro.html" />
     <Content Include="img\12.png" />
     <Content Include="js\jquery.fitvids.js" />
     <Content Include="js\signalr-send-vid-update.js" />

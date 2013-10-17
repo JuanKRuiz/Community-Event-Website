@@ -28,8 +28,9 @@
                 <div class="nav-collapse collapse">
                     <ul class="nav">
                         <li><a href="/index.html">Home</a></li>
-                        <li class="active"><a href="#">Transmisión</a></li>
-                        <li><a href="/registro.html">Registro</a></li>
+                        <li><a href="/live.html">Transmisión</a></li>
+                        <li><a href="/admin.html">Admin</a></li>
+                        <li class="active"><a href="/registro.html">Registro</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,21 +40,18 @@
 
         <ul class="breadcrumb">
             <li><a href="/index.html">Home</a> <span class="divider">/</span></li>
-            <li class="active">Transmisión</li>
+            <li class="active">Registro</li>
         </ul>
 
         <div class="hero-unit">
-            <img src="/img/ndi-logo.png" class="span2" />
-            <h1>Transmisión en vivo!</h1>
+            <img src="img/ndi-logo.png" class="span2" />
+            <h1>Regístrate</h1>
+            <p>Recibirás información de las conferencias de cada día para que no te pierdas de los temas que más te gustan.</p>
             <p></p>
-            <p>Disfruta de los mejores contenidos</p>
         </div>
 
-        <div id="video-container" style="text-align:center; margin:20px;">
-            <iframe id="youtube" width="1280" height="720" src="http://www.youtube.com/embed/5NTEHdKpfSY?autoplay=1"
-                    frameborder="0" allowfullscreen></iframe>
-        </div>
-
+        <iframe style="width:100%;" height="890" id="sdx_ow_iframe" name="sdx_ow_iframe" frameborder="0" src="https://excel.officeapps.live.com/x/_layouts/xlform.aspx?Fi=SD3CF9030FE691DC06!62533&amp;H=emul&amp;C=1__BAY-SKY-WAC-WSHI&amp;ui=ES-AR&amp;rs=ES-AR&amp;wdFormId=%7bD2ADB65F-205B-4D0D-8E60-4C18089C77A0%7d&amp;su=4393546278304340998&amp;cy=NYYCG1IJFHHAa6bpF4jdESg2vNEu%2bbcY1HRsMf9Kasc%3d9&amp;ak=t%3d0%26s%3d0%26v%3d!AGjzVNe402RSEFE&amp;ad=ES-AR&amp;sc=host%3d%26sc%3dhost%253d"></iframe>
+        
     </div>
     <div class="container">
         <hr />
@@ -65,35 +63,7 @@
         // Fallback to loading jQuery from a local path if the CDN is unavailable
         (window.jQuery || document.write('<script src="/Scripts/jquery-2.0.3.min.js"><\/script>'));
     </script>
-    <script src="/js/jquery.fitvids.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Target your .container, .wrapper, .post, etc.
-            $("#video-container").fitVids();
-        });
-    </script>
     <script src="/Scripts/jquery.signalR-2.0.0-rc1.min.js"></script>
-    <script src="/signalr/hubs"></script>
-    <script type="text/javascript">
-        $(function () {
-            var youtubeHangoutHubProxy = $.connection.youtubeHangoutHub;
-            $.connection.hub.logging = true;
-
-            youtubeHangoutHubProxy.client.updateHangOut = function (videoid) {
-                $("#youtube").attr('src', 'http://www.youtube.com/embed/' + videoid + '?autoplay=1');
-            };
-
-            $.connection.hub.start();
-            
-            $.connection.hub.disconnected(function () {
-                setTimeout(function () {
-                    $.connection.hub.start();
-                }, 5000);
-            });
-
-        }
-        );
-    </script>
     <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
