@@ -1,5 +1,5 @@
 ﻿{
-"week":"Semana del 12 de Noviembre",
+"week":"Semana del 12 al 14 de Noviembre",
 "dates":[
 			{
 				"day": "12",
@@ -8,6 +8,24 @@
 						{ "hour": "8 - 9", "what": "Power Shell para Desarrolladores", "who": "Miguel Angel Carreon", "audience": "Developer" },
 						{ "hour": "9 - 10", "what": "Programación paralela con TPL", "who": "José Saturnino Pimentel", "audience": "Developer" },
 						{ "hour": "10 - 11", "what": "Introducción a Web API", "who": "Samuel Arellano", "audience": "Developer" }
+				]
+			},
+			{
+				"day": "13",
+				"color":"background-color:#3C51B2;",
+				"conferences": [
+						{ "hour": "8 - 9", "what": "Lync: Unificando las Comunicaciones Empresariales", "who": "Santiago Buitron", "audience": "ITPro" },
+						{ "hour": "9 - 10", "what": "Kodu: Crea tus Propios Videojuegos mediante un Lenguaje Visual de Programacion", "who": "Carlos Enrique Pachas", "audience": "Developer" },
+						{ "hour": "10 - 11", "what": "Developer Innovación e impacto social con tecnología móvil", "who": "Carlos Arias Hernández", "audience": "Developer" }
+				]
+			},
+			{
+				"day": "14",
+				"color":"background-color:#88B262;",
+				"conferences": [
+						{ "hour": "8 - 9", "what": "Consumir Servicios Web Api desde WinPhone / Windows 8", "who": "Roberto Alvarado", "audience": "Developer" },
+						{ "hour": "9 - 10", "what": "Desarrollando para Windows phone y Windows 8 con el mismo código", "who": "Amin Espinoza", "audience": "Developer" },
+						{ "hour": "10 - 11", "what": "Conociendo el motor relacional", "who": "John Alexander Bulla", "audience": "Developer" }
 				]
 			}
 		]

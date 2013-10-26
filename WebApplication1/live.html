@@ -75,7 +75,8 @@
         $(function () {
             //cambiar tamaño de la ventana de video
             $("#video-container").fitVids();
-            //Cambiar la url de acuerdo al último video en reproducción
+
+            //Cambiar la url de acuerdo al último video guardado en azure table storage
             $.get('/api/ndiparam/', '', function (videoid) {
                 $("#youtube").attr('src', 'http://www.youtube.com/embed/' + videoid + '?autoplay=1');
                 $("#video-container").fitVids();

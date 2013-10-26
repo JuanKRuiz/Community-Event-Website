@@ -119,6 +119,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\13.png" />
+    <Content Include="img\14.png" />
     <Content Include="registro.html" />
     <Content Include="img\12.png" />
     <Content Include="js\jquery.fitvids.js" />
